@@ -11,7 +11,6 @@ import { Breadcrumb, Layout, Menu, theme } from 'antd';
 
 const { Header, Content, Footer, Sider } = Layout;
 
-
 function getItem(
   label,
   key,
@@ -23,22 +22,18 @@ function getItem(
     icon,
     children,
     label,
-  }
+  };
 }
 
 const items = [
   getItem('Option 1', '1', <PieChartOutlined />),
   getItem('Option 2', '2', <DesktopOutlined />),
-  getItem('User', 'sub1', <UserOutlined />, [
-    getItem('Tom', '3'),
-    getItem('Bill', '4'),
-    getItem('Alex', '5'),
-  ]),
+  getItem('User', 'sub1', <UserOutlined />),
   getItem('Team', 'sub2', <TeamOutlined />, [getItem('Team 1', '6'), getItem('Team 2', '8')]),
   getItem('Files', '9', <FileOutlined />),
 ];
 
-  const App = () => {
+const App = () => {
   const [collapsed, setCollapsed] = useState(false);
   const {
     token: { colorBgContainer, borderRadiusLG },
@@ -66,11 +61,10 @@ const items = [
           </div>
         </Content>
         <Footer style={{ textAlign: 'center' }}>
-          Ant Design ©{new Date().getFullYear()} Created by Ant UED
+          Created by <a href="https://www.linkedin.com/in/gabriel-penke-953771206/">Gabriel Penke</a>
         </Footer>
       </Layout>
     </Layout>
   );
 };
-
 export default App;
