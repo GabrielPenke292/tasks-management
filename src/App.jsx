@@ -9,6 +9,7 @@ import {
 } from '@ant-design/icons';
 import NewTask from './components/newTaks';
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import ListTasks from './components/ListTasks';
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -48,6 +49,7 @@ const App = () => {
         <Header style={{ padding: 0, background: colorBgContainer }} />
         <Content style={{ margin: '0 16px' }}>
           <NewTask />
+          <ListTasks />
         </Content>
         <Footer style={{ textAlign: 'center' }}>
           Created by <a href="https://www.linkedin.com/in/gabriel-penke-953771206/">Gabriel Penke</a>
