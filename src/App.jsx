@@ -7,6 +7,7 @@ import {
   TeamOutlined,
   UserOutlined,
 } from '@ant-design/icons';
+import NewTask from './components/newTaks';
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
 
 const { Header, Content, Footer, Sider } = Layout;
@@ -46,17 +47,7 @@ const App = () => {
       <Layout>
         <Header style={{ padding: 0, background: colorBgContainer }} />
         <Content style={{ margin: '0 16px' }}>
-          <Breadcrumb style={{ margin: '16px 0' }} items={[{ title: 'User' }, { title: 'Bill' }]} />
-          <div
-            style={{
-              padding: 24,
-              minHeight: 360,
-              background: colorBgContainer,
-              borderRadius: borderRadiusLG,
-            }}
-          >
-            Bill is a cat.
-          </div>
+          <NewTask />
         </Content>
         <Footer style={{ textAlign: 'center' }}>
           Created by <a href="https://www.linkedin.com/in/gabriel-penke-953771206/">Gabriel Penke</a>
